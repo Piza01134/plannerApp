@@ -1,0 +1,44 @@
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+Debian 'dpkg' package management program version 1.19.7 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /home/piza01134/.local/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-13-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-13-openjdk-amd64/bin/keytool
+# Install platform
+# Run 'git config --get remote.origin.url'
+# Cwd /mnt/c/Users/Matt/PycharmProjects/plannerApp/.buildozer/android/platform/python-for-android
+https://github.com/kivy/python-for-android.git
+# Run 'git branch -vv'
+# Cwd /mnt/c/Users/Matt/PycharmProjects/plannerApp/.buildozer/android/platform/python-for-android
+* master 4563f3e3 [origin/master] Merge pull request #2488 from misl6/release-2021.09.05
+# Run '/usr/bin/python3.9 -m pip install -q --user \'appdirs\' \'colorama>=0.3.3\' \'jinja2\' \'six\' \'enum34; python_version<"3.4"\' \'sh>=1.10; sys_platform!="nt"\' \'pep517<0.7.0\' \'toml\''
+# Cwd None
+# Apache ANT found at /home/piza01134/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/piza01134/.buildozer/android/platform/android-sdk
+# Recommended android's NDK version by p4a is: 19c
+# Android NDK found at /home/piza01134/.buildozer/android/platform/android-ndk-r19c
+# Read available permissions from api-versions.xml
+# Check application requirements
+# Compile platform
+# Run '/usr/bin/python3.9 -m pythonforandroid.toolchain create --dist_name=plannerapp --bootstrap=sdl2 --requirements=python3,kivy,kivymd,datetime,sqlite3 --arch armeabi-v7a --copy-libs --color=always --storage-dir="/mnt/c/Users/Matt/PycharmProjects/plannerApp/.buildozer/android/platform/build-armeabi-v7a" --ndk-api=21 --ignore-setup-py --debug'
+# Cwd /mnt/c/Users/Matt/PycharmProjects/plannerApp/.buildozer/android/platform/python-for-android
+# Build the application #11
+# Copy application source from /mnt/c/Users/Matt/PycharmProjects/plannerApp
+# Create directory /mnt/c/Users/Matt/PycharmProjects/plannerApp/.buildozer/android/app
+# Copy /mnt/c/Users/Matt/PycharmProjects/plannerApp/database.py
+# Copy /mnt/c/Users/Matt/PycharmProjects/plannerApp/main.py
+# Copy /mnt/c/Users/Matt/PycharmProjects/plannerApp/Planner.kv
+# Copy /mnt/c/Users/Matt/PycharmProjects/plannerApp/todo.db
