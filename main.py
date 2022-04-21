@@ -13,8 +13,6 @@ from kivymd.uix.list import TwoLineAvatarIconListItem, ILeftBodyTouch
 from kivymd.uix.selectioncontrol import MDCheckbox
 from kivy.utils import platform
 
-kivy.require("2.0.0")
-
 if platform == "android":
     from android.permissions import request_permissions, Permission
 
