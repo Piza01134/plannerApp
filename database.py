@@ -1,14 +1,21 @@
 import sqlite3
 import os
 
+from kivy.utils import platform
 
 class Database:
     def __init__(self):
-        app_path = os.path.dirname(os.path.abspath(__file__))
-        self.con = sqlite3.connect(os.path.join(app_path, 'todo.db'))
+        PATH = '.'
+        if platform == 'android':
+            from android.permissions import request_permissions, Permission
+            request_permissions([Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE])
+            app_folder = os.path.dirname(os.path.abspath(__file__))
+            PATH = "/storage/emulated/0/DCIM"
+        self.con = sqlite3.connect(os.path.join(PATH, 'todo.db'))
         self.cursor = self.con.cursor()
         self.create_task_table()
         self.create_theme_table()
+        print(PATH + 'todo.db')
 
     def create_theme_table(self):
         """Create them table"""
