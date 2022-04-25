@@ -253,7 +253,7 @@ MDScreen:
             id: task_text
             hint_text: "Add Task Name..."
             pos_hint: {"x": 0, "top": 1}
-            size_hint: .8, None
+            size_hint: .75, None
             max_text_length: 50
             on_text_validate: (app.add_task(task_text, date_text.text + "   " + time_text.text, desc_text.text), app.close_checklist_dialog())
 
@@ -264,16 +264,16 @@ MDScreen:
 
         MDIconButton:
             icon: 'clock'
-            pos_hint: {"right": 1, "top": 1}
+            pos_hint: {"right": 1.01, "top": 1}
             on_release: root.show_time_picker()
 
         MDLabel:
             id: date_text
-            pos_hint: {"x": 0, "top": .9}
+            pos_hint: {"x": 0, "top": 1.1}
 
         MDLabel
             id: time_text
-            pos_hint: {"x": .5, "top": .9}
+            pos_hint: {"x": 0, "top": .9}
 
         TextInput:
             id: desc_text
