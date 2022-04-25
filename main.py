@@ -165,19 +165,21 @@ class PlannerApp(MDApp):
                 self.task_dialog.content_cls.ids.read_task_text.text = task[3]
                 due_date = task[2]
                 #split date
-                date = due_date[:-8]
-                time = due_date[-8:]
-                self.task_dialog.content_cls.ids.task_date_text.text = date
-                self.task_dialog.content_cls.ids.task_time_text.text = time
+                if due_date is not None:
+                    date = due_date[:-8]
+                    time = due_date[-8:]
+                    self.task_dialog.content_cls.ids.task_date_text.text = date
+                    self.task_dialog.content_cls.ids.task_time_text.text = time
         for task in completed_tasks:
             if task[0] == the_list_item.pk:
                 self.task_dialog.content_cls.ids.read_task_text.text = task[3]
                 due_date = task[2]
                 # split date
-                date = due_date[:-8]
-                time = due_date[-8:]
-                self.task_dialog.content_cls.ids.task_date_text.text = date
-                self.task_dialog.content_cls.ids.task_time_text.text = time
+                if due_date is not None:
+                    date = due_date[:-8]
+                    time = due_date[-8:]
+                    self.task_dialog.content_cls.ids.task_date_text.text = date
+                    self.task_dialog.content_cls.ids.task_time_text.text = time
 
         self.task_dialog.open()
 
